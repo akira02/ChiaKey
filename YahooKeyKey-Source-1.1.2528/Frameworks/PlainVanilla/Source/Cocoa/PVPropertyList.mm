@@ -43,10 +43,12 @@ PVPlistValue* PVArrayValueFromNSArray(NSArray* plistArray) {
   id value;
   while (value = [enu nextObject]) {
     if ([value isKindOfClass:[NSString class]]) {
-      PVPlistValue stringValue(string([value UTF8String]));
+      auto x = [value UTF8String];
+      PVPlistValue stringValue((std::string(x)));
       array->addArrayElement(&stringValue);
     } else if ([value isKindOfClass:[NSNumber class]]) {
-      PVPlistValue stringValue(string([[value stringValue] UTF8String]));
+      auto y = [[value stringValue] UTF8String];
+      PVPlistValue stringValue((std::string(y)));
       array->addArrayElement(&stringValue);
     } else if ([value isKindOfClass:[NSArray class]]) {
       PVPlistValue* arrayValue = PVArrayValueFromNSArray(value);
@@ -72,10 +74,12 @@ PVPlistValue* PVDictionaryValueFromNSDictionary(NSDictionary* plistDict) {
     id value = [plistDict objectForKey:key];
 
     if ([value isKindOfClass:[NSString class]]) {
-      PVPlistValue stringValue(string([value UTF8String]));
+      auto x = [value UTF8String];
+      PVPlistValue stringValue((std::string(x)));
       dict->setKeyValue(keyString, &stringValue);
     } else if ([value isKindOfClass:[NSNumber class]]) {
-      PVPlistValue stringValue(string([[value stringValue] UTF8String]));
+      auto y = [[value stringValue] UTF8String];
+      PVPlistValue stringValue((std::string(y)));
       dict->setKeyValue(keyString, &stringValue);
     } else if ([value isKindOfClass:[NSArray class]]) {
       PVPlistValue* arrayValue = PVArrayValueFromNSArray(value);
@@ -148,76 +152,70 @@ NSDictionary* PVNSDictionaryFromDictionaryValue(PVPlistValue* dictValue) {
 }
 
 PVPlistValue* PVPropertyList::ParsePlistFromString(const char* stringData) {
-  NSData* data = [NSData dataWithBytes:stringData length:strlen(stringData)];
+  PVPlistValue* finalResult;
+  @autoreleasepool {
+    NSData* data = [NSData dataWithBytes:stringData length:strlen(stringData)];
 
-  if (!data) return 0;
+    if (!data) return NULL;
 
-  NSString* errorString = nil;
-  NSPropertyListFormat format;
-  id plist =
-      [NSPropertyListSerialization propertyListFromData:data
-                                       mutabilityOption:NSPropertyListImmutable
-                                                 format:&format
-                                       errorDescription:&errorString];
+    NSError* errorSonomono = nil;
+    NSPropertyListFormat format;
+    id plist = [NSPropertyListSerialization
+        propertyListWithData:data
+                     options:NSPropertyListImmutable
+                      format:&format
+                       error:&errorSonomono];
 
-  if (!plist || errorString) {
-    [errorString release];
-    return 0;
+    if (!plist || errorSonomono ||
+        ![plist isKindOfClass:[NSDictionary class]]) {
+      return NULL;
+    }
+
+    finalResult = PVDictionaryValueFromNSDictionary(plist);
   }
 
-  if (![plist isKindOfClass:[NSDictionary class]]) {
-    return 0;
-  }
-
-  return PVDictionaryValueFromNSDictionary(plist);
+  return finalResult;
 }
 
 PVPlistValue* PVPropertyList::ParsePlist(const string& filename) {
-  NSData* data = [NSData
-      dataWithContentsOfFile:[NSString stringWithUTF8String:filename.c_str()]];
+  PVPlistValue* finalResult;
+  @autoreleasepool {
+    NSData* data = [NSData
+        dataWithContentsOfFile:[NSString
+                                   stringWithUTF8String:filename.c_str()]];
 
-  if (!data) return 0;
+    if (!data) return NULL;
 
-  NSString* errorString = nil;
-  NSPropertyListFormat format;
-  id plist =
-      [NSPropertyListSerialization propertyListFromData:data
-                                       mutabilityOption:NSPropertyListImmutable
-                                                 format:&format
-                                       errorDescription:&errorString];
+    NSError* errorSonomono = nil;
+    NSPropertyListFormat format;
+    id plist = [NSPropertyListSerialization
+        propertyListWithData:data
+                     options:NSPropertyListImmutable
+                      format:&format
+                       error:&errorSonomono];
 
-  if (!plist || errorString) {
-    [errorString release];
-    return 0;
+    if (!plist || errorSonomono ||
+        ![plist isKindOfClass:[NSDictionary class]]) {
+      return NULL;
+    }
+
+    finalResult = PVDictionaryValueFromNSDictionary(plist);
   }
 
-  if (![plist isKindOfClass:[NSDictionary class]]) {
-    return 0;
-  }
-
-  return PVDictionaryValueFromNSDictionary(plist);
+  return finalResult;
 }
 
 void PVPropertyList::WritePlist(const string& filename,
                                 PVPlistValue* rootDictionary) {
   if (!rootDictionary) return;
-
   if (rootDictionary->type() != PVPlistValue::Dictionary) return;
 
-  NSDictionary* dict = PVNSDictionaryFromDictionaryValue(rootDictionary);
-  NSString* errorString = nil;
-  NSData* data = [NSPropertyListSerialization
-      dataFromPropertyList:dict
-                    format:NSPropertyListXMLFormat_v1_0
-          errorDescription:&errorString];
-
-  if (errorString) {
-    [errorString release];
-  }
-
-  if (data) {
-    [data writeToFile:[NSString stringWithUTF8String:filename.c_str()]
-           atomically:YES];
+  @autoreleasepool {
+    NSDictionary* dict = PVNSDictionaryFromDictionaryValue(rootDictionary);
+    if (dict) {
+      [dict writeToFile:[NSString stringWithUTF8String:filename.c_str()]
+             atomically:YES];
+    }
   }
 }
 

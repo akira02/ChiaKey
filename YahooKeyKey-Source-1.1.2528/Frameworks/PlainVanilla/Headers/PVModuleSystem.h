@@ -249,10 +249,10 @@ class PVModuleManager : public OVBase {
 
   virtual PVPlistValue* configDictionaryForModule(const string& name) {
     map<string, ModuleMetadata>::iterator mdataIter = m_moduleStore.find(name);
-    if (mdataIter == m_moduleStore.end()) return false;
+    if (mdataIter == m_moduleStore.end()) return nullptr;
 
     ModuleMetadata& meta = (*mdataIter).second;
-    if (!meta.propertyList) return false;
+    if (!meta.propertyList) return nullptr;
 
     return meta.propertyList->rootDictionary();
   }
