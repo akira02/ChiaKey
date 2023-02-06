@@ -2,7 +2,7 @@ KEYPHRASE = $(shell cat ../Keyring/DevVendorDBKeyPhrase.txt)
 # KEYPARAM = -key '$(KEYPHRASE)'
 KEYPARAM =
 # SQLITE3 = ../PrecompiledTools/sqlite3-cerod-see $(KEYPARAM)
-SQLITE3 = /usr/bin/sqlite3
+SQLITE3 = /opt/local/bin/sqlite3
 
 INSERTER = ./insert-file-into-db.rb
 PREPOPULATE_TABLE_NAME = prepopulated_service_data
