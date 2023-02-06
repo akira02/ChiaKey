@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5B3CE69429914F7800641F53 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69229914F3900641F53 /* libsqlite3.tbd */; };
+		5B3CE69629914FC100641F53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69529914FB900641F53 /* libz.tbd */; };
 		6A0138F50ED1D47900715577 /* YKAFWordCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A0138F20ED1D47900715577 /* YKAFWordCount.cpp */; };
 		6A0139040ED1D4A000715577 /* PackageMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A0139030ED1D4A000715577 /* PackageMain.cpp */; };
 		6A01390F0ED1D50500715577 /* OpenVanilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A476EE70D5C48CE00C6C744 /* OpenVanilla.framework */; };
@@ -258,12 +260,11 @@
 		6A6CE73D0EC9C2B900244B97 /* OVLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A6CE73C0EC9C2B900244B97 /* OVLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6CE73E0EC9C2B900244B97 /* OVLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A6CE73C0EC9C2B900244B97 /* OVLocalization.h */; };
 		6A753A480D83D910007EAB2F /* BPMFUserPhraseHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A428A9F0D741BC600ABCDA1 /* BPMFUserPhraseHelper.cpp */; };
-		6A7E65870E1BB3600071ED92 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libpthread.dylib */; };
-		6A7E65880E1BB3600071ED92 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6B7890DD08DE400A0C8FD /* libz.dylib */; };
-		6A7E65DF0E1BB5980071ED92 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libpthread.dylib */; };
-		6A7E65E00E1BB59B0071ED92 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libpthread.dylib */; };
-		6A7E65E40E1BB5A30071ED92 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6B7890DD08DE400A0C8FD /* libz.dylib */; };
-		6A7E65E50E1BB5A60071ED92 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6B7890DD08DE400A0C8FD /* libz.dylib */; };
+		6A7E65870E1BB3600071ED92 /* libSystem.B.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libSystem.B.tbd */; };
+		6A7E65DF0E1BB5980071ED92 /* libSystem.B.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libSystem.B.tbd */; };
+		6A7E65E00E1BB59B0071ED92 /* libSystem.B.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E657E0E1BB2F30071ED92 /* libSystem.B.tbd */; };
+		6A7E65E40E1BB5A30071ED92 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */; };
+		6A7E65E50E1BB5A60071ED92 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */; };
 		6A7FF87F0D71F89F001EA93C /* Evalgelion.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7FF87B0D71F89F001EA93C /* Evalgelion.h */; };
 		6A7FF8800D71F89F001EA93C /* OVAFEval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FF87C0D71F89F001EA93C /* OVAFEval.cpp */; };
 		6A7FF8810D71F89F001EA93C /* OVAFEval.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7FF87D0D71F89F001EA93C /* OVAFEval.h */; };
@@ -376,7 +377,7 @@
 		6AFC445310623A6A000CECB4 /* LFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFC445010623A6A000CECB4 /* LFUtilities.h */; };
 		6AFC800D0D98F1C8007588D8 /* libPlainVanilla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3FA950D76776200C7D18D /* libPlainVanilla.a */; };
 		6AFDF3D7113261C700AE32D6 /* Minotaur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD322220D76D793005083D4 /* Minotaur.cpp */; };
-		6AFDF3E4113261E300AE32D6 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFDF3E3113261E300AE32D6 /* libcrypto.dylib */; };
+		6AFDF3E4113261E300AE32D6 /* libcrypto.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFDF3E3113261E300AE32D6 /* libcrypto.3.dylib */; };
 		D4041FF10F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4041FF00F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.m */; };
 		D407A1B70EC4B9D4004F434D /* addressBook.png in Resources */ = {isa = PBXBuildFile; fileRef = D407A1B60EC4B9D4004F434D /* addressBook.png */; };
 		D4112E860D631738001475CB /* FontSmaller.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D4112E840D631738001475CB /* FontSmaller.tiff */; };
@@ -471,8 +472,7 @@
 		D484CF5E0EC226850051B6CA /* CVAboutController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D484CF5A0EC226850051B6CA /* CVAboutController.mm */; };
 		D484CF660EC2277E0051B6CA /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D484CF640EC2277E0051B6CA /* AboutWindow.xib */; };
 		D48695E70DE44CFC0078C221 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB5B30D0D5C8DBA0040CD26 /* WebKit.framework */; };
-		D493E9D7167775BE00BA9368 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D493E9D6167775BE00BA9368 /* libsqlite3.dylib */; };
-		D493E9D81677761800BA9368 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D493E9D6167775BE00BA9368 /* libsqlite3.dylib */; };
+		D493E9D7167775BE00BA9368 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D493E9D6167775BE00BA9368 /* libsqlite3.tbd */; };
 		D4987D130E17FA5A001D4197 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F7DB130D9B8F3E00AA67B9 /* Carbon.framework */; };
 		D4987D1F0E17FB37001D4197 /* CVKeyboardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D4987D1D0E17FB37001D4197 /* CVKeyboardHelper.h */; };
 		D4987D200E17FB37001D4197 /* CVKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D4987D1E0E17FB37001D4197 /* CVKeyboardHelper.m */; };
@@ -878,6 +878,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B3CE69229914F3900641F53 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5B3CE69529914FB900641F53 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6A0138EB0ED1D44200715577 /* YKAFWordCount.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKAFWordCount.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0138F20ED1D47900715577 /* YKAFWordCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YKAFWordCount.cpp; path = ModulePackages/YKAFWordCount/YKAFWordCount.cpp; sourceTree = "<group>"; };
 		6A0138F30ED1D47900715577 /* YKAFWordCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKAFWordCount.h; path = ModulePackages/YKAFWordCount/YKAFWordCount.h; sourceTree = "<group>"; };
@@ -1060,7 +1062,7 @@
 		6A52DB7A1095CB9700788A09 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = ModulePackages/YKAFWordCount/zh_TW.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A52DB7B1095CB9900788A09 /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = ModulePackages/YKAFWordCount/zh_CN.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A6CE73C0EC9C2B900244B97 /* OVLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVLocalization.h; sourceTree = "<group>"; };
-		6A7E657E0E1BB2F30071ED92 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = /usr/lib/libpthread.dylib; sourceTree = "<absolute>"; };
+		6A7E657E0E1BB2F30071ED92 /* libSystem.B.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.B.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.B.tbd; sourceTree = "<absolute>"; };
 		6A7E65E90E1BB7A10071ED92 /* KeyKey.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = KeyKey.db; path = Distributions/Takao/CookedDatabase/KeyKey.db; sourceTree = "<group>"; };
 		6A7FF87B0D71F89F001EA93C /* Evalgelion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Evalgelion.h; path = ModulePackages/OVAFEval/Evalgelion.h; sourceTree = "<group>"; };
 		6A7FF87C0D71F89F001EA93C /* OVAFEval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OVAFEval.cpp; path = ModulePackages/OVAFEval/OVAFEval.cpp; sourceTree = "<group>"; };
@@ -1173,9 +1175,9 @@
 		6AF261490D9F96FC00F499FB /* ComponentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComponentConfig.h; path = "Loaders/OSX-TSM/ComponentConfig.h"; sourceTree = "<group>"; };
 		6AF2614A0D9F96FC00F499FB /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Context.h; path = "Loaders/OSX-TSM/Context.h"; sourceTree = "<group>"; };
 		6AF2614B0D9F96FC00F499FB /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Context.m; path = "Loaders/OSX-TSM/Context.m"; sourceTree = "<group>"; };
-		6AF6B7890DD08DE400A0C8FD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
+		6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.1.tbd; sourceTree = "<absolute>"; };
 		6AFC445010623A6A000CECB4 /* LFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LFUtilities.h; path = Frameworks/LFExtensions/LFUtilities.h; sourceTree = "<group>"; };
-		6AFDF3E3113261E300AE32D6 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		6AFDF3E3113261E300AE32D6 /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.3.dylib; path = /opt/local/libexec/openssl3/lib/libcrypto.3.dylib; sourceTree = "<absolute>"; };
 		D4041FEF0F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TakaoKeyboardLayoutPopUpButton.h; path = PreferenceApplications/OSX/TakaoKeyboardLayoutPopUpButton.h; sourceTree = "<group>"; };
 		D4041FF00F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TakaoKeyboardLayoutPopUpButton.m; path = PreferenceApplications/OSX/TakaoKeyboardLayoutPopUpButton.m; sourceTree = "<group>"; };
 		D407A1B60EC4B9D4004F434D /* addressBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addressBook.png; path = Utilities/PhraseEditor/OSX/Images/addressBook.png; sourceTree = "<group>"; };
@@ -1314,7 +1316,7 @@
 		D484CF650EC2277E0051B6CA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Loaders/OSX-IMK/English.lproj/AboutWindow.xib"; sourceTree = "<group>"; };
 		D484CFA80EC22C1C0051B6CA /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_TW; path = "Loaders/OSX-IMK/zh_TW.lproj/AboutWindow.xib"; sourceTree = "<group>"; };
 		D484CFA90EC22C210051B6CA /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = zh_CN; path = "Loaders/OSX-IMK/zh_CN.lproj/AboutWindow.xib"; sourceTree = "<group>"; };
-		D493E9D6167775BE00BA9368 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		D493E9D6167775BE00BA9368 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd; sourceTree = "<absolute>"; };
 		D4987D1D0E17FB37001D4197 /* CVKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVKeyboardHelper.h; path = "Loaders/OSX-IMK/CVKeyboardHelper.h"; sourceTree = "<group>"; };
 		D4987D1E0E17FB37001D4197 /* CVKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVKeyboardHelper.m; path = "Loaders/OSX-IMK/CVKeyboardHelper.m"; sourceTree = "<group>"; };
 		D49CAECC0D8ECE3500738634 /* About.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = About.jpg; path = "Loaders/OSX-IMK/Images/About.jpg"; sourceTree = "<group>"; };
@@ -1400,7 +1402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D493E9D7167775BE00BA9368 /* libsqlite3.dylib in Frameworks */,
+				D493E9D7167775BE00BA9368 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1411,9 +1413,9 @@
 				6A428A630D74089800ABCDA1 /* libOpenVanilla.a in Frameworks */,
 				6A428A640D74089800ABCDA1 /* libFormosa.a in Frameworks */,
 				6A428A650D74089800ABCDA1 /* libManjusri.a in Frameworks */,
-				6A7E65E00E1BB59B0071ED92 /* libpthread.dylib in Frameworks */,
-				6A7E65E40E1BB5A30071ED92 /* libz.dylib in Frameworks */,
-				6AFDF3E4113261E300AE32D6 /* libcrypto.dylib in Frameworks */,
+				6A7E65E00E1BB59B0071ED92 /* libSystem.B.tbd in Frameworks */,
+				6A7E65E40E1BB5A30071ED92 /* libz.1.tbd in Frameworks */,
+				6AFDF3E4113261E300AE32D6 /* libcrypto.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1468,7 +1470,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D493E9D81677761800BA9368 /* libsqlite3.dylib in Frameworks */,
 				6A4772D80D5C604E00C6C744 /* OpenVanilla.framework in Frameworks */,
 				6A4772DA0D5C604E00C6C744 /* LFExtensions.framework in Frameworks */,
 				6AED2FC90D8BCF9600E6D3F8 /* libCareService.a in Frameworks */,
@@ -1476,14 +1477,15 @@
 				6A859F880E41AAC9002C3544 /* libLFWebAPIToolbox.a in Frameworks */,
 				6AFC800D0D98F1C8007588D8 /* libPlainVanilla.a in Frameworks */,
 				6ACA0C660D5C88AB00514BC7 /* libTakaoModulePackages.a in Frameworks */,
+				5B3CE69629914FC100641F53 /* libz.tbd in Frameworks */,
 				6A4773790D5C621400C6C744 /* AppKit.framework in Frameworks */,
 				6A4773840D5C622A00C6C744 /* AudioToolbox.framework in Frameworks */,
 				D4987D130E17FA5A001D4197 /* Carbon.framework in Frameworks */,
 				6A47737B0D5C621400C6C744 /* InputMethodKit.framework in Frameworks */,
 				6AB5B30E0D5C8DBA0040CD26 /* WebKit.framework in Frameworks */,
 				6AD3241F0D76DB78005083D4 /* libcrypto.dylib in Frameworks */,
-				6A7E65870E1BB3600071ED92 /* libpthread.dylib in Frameworks */,
-				6A7E65880E1BB3600071ED92 /* libz.dylib in Frameworks */,
+				6A7E65870E1BB3600071ED92 /* libSystem.B.tbd in Frameworks */,
+				5B3CE69429914F7800641F53 /* libsqlite3.tbd in Frameworks */,
 				6A85A1F70E41ADF9002C3544 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1512,8 +1514,8 @@
 				6ABC3EB20DBF628300146A8B /* libOpenVanilla.a in Frameworks */,
 				6ABC3EB50DBF628300146A8B /* libManjusri.a in Frameworks */,
 				6ABC3EB40DBF628300146A8B /* libFormosa.a in Frameworks */,
-				6A7E65DF0E1BB5980071ED92 /* libpthread.dylib in Frameworks */,
-				6A7E65E50E1BB5A60071ED92 /* libz.dylib in Frameworks */,
+				6A7E65DF0E1BB5980071ED92 /* libSystem.B.tbd in Frameworks */,
+				6A7E65E50E1BB5A60071ED92 /* libz.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1746,7 +1748,7 @@
 				6A4771460D5C583600C6C744 /* OS X Frameworks and Libraries */,
 				6A476FF90D5C4DBE00C6C744 /* ExternalLibraries */,
 				6A476EE80D5C48CE00C6C744 /* Products */,
-				6AFDF3E3113261E300AE32D6 /* libcrypto.dylib */,
+				6AFDF3E3113261E300AE32D6 /* libcrypto.3.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1787,6 +1789,8 @@
 		6A476F790D5C4D0300C6C744 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B3CE69529914FB900641F53 /* libz.tbd */,
+				5B3CE69229914F3900641F53 /* libsqlite3.tbd */,
 				6A859F2C0E41A473002C3544 /* LFWebAPIToolbox */,
 				6AD322060D76D741005083D4 /* Minotaur */,
 				6A2D55F80D5D886600E710D6 /* Manjusri */,
@@ -2011,12 +2015,12 @@
 		6A4771460D5C583600C6C744 /* OS X Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D493E9D6167775BE00BA9368 /* libsqlite3.dylib */,
+				D493E9D6167775BE00BA9368 /* libsqlite3.tbd */,
 				D455A7FF106267A200CC2B47 /* Security.framework */,
 				D430EE3A0EC30F7C006B7EF9 /* AddressBook.framework */,
 				6A85A1F50E41ADF9002C3544 /* SystemConfiguration.framework */,
-				6A7E657E0E1BB2F30071ED92 /* libpthread.dylib */,
-				6AF6B7890DD08DE400A0C8FD /* libz.dylib */,
+				6A7E657E0E1BB2F30071ED92 /* libSystem.B.tbd */,
+				6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */,
 				D4CB39580D9D7665000F7DE9 /* DotMacKit.framework */,
 				D4F7DB130D9B8F3E00AA67B9 /* Carbon.framework */,
 				6AD322250D76D7AE005083D4 /* libcrypto.dylib */,
@@ -3708,7 +3712,6 @@
 		6A476ED90D5C48AB00C6C744 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 6A476EDC0D5C48AB00C6C744 /* Build configuration list for PBXProject "Takao" */;
