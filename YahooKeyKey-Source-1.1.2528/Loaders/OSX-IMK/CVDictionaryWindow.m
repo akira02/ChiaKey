@@ -11,11 +11,7 @@
                               styleMask:aStyle
                                 backing:NSBackingStoreBuffered
                                   defer:NO]) {
-    if (LFIsRunningUnderOSX10_5AndAbove()) {
-      [self setLevel:CGShieldingWindowLevel() + 1];
-    } else {
-      [self setLevel:NSScreenSaverWindowLevel];
-    }
+    [self setLevel:CGShieldingWindowLevel() + 1];
     [self setHasShadow:YES];
   }
 

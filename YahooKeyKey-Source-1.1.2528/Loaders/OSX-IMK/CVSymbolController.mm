@@ -118,7 +118,7 @@
 #pragma mark Interface Builder actions
 
 - (IBAction)toggleSymbol:(id)sender {
-  int selectedIndex = [_popUpButton indexOfItem:[_popUpButton selectedItem]];
+  NSInteger selectedIndex = [_popUpButton indexOfItem:[_popUpButton selectedItem]];
   id item = [_viewArray objectAtIndex:selectedIndex];
   NSView *view = [item view];
   [self toggleActiveView:view];

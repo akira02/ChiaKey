@@ -27,7 +27,7 @@
     float y = (rect.size.height - size.height) / 2;
     [i drawAtPoint:NSMakePoint(x, y)
           fromRect:NSZeroRect
-         operation:NSCompositeSourceOver
+         operation:NSCompositingOperationSourceOver
           fraction:1.0];
   }
 }

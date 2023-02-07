@@ -21,10 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5B1CFB2929920B3E00835F8C /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1CFB2829920B3800835F8C /* libboringssl.tbd */; };
-		5B1CFB2A29920B9B00835F8C /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1CFB2829920B3800835F8C /* libboringssl.tbd */; };
-		5B1CFB2B29920BAB00835F8C /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1CFB2829920B3800835F8C /* libboringssl.tbd */; };
-		5B1CFB2C29920DBD00835F8C /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1CFB2829920B3800835F8C /* libboringssl.tbd */; };
+		5B1CFB2D2992109D00835F8C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69229914F3900641F53 /* libsqlite3.tbd */; };
+		5B1CFB2E299210AA00835F8C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69229914F3900641F53 /* libsqlite3.tbd */; };
 		5B3CE69429914F7800641F53 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69229914F3900641F53 /* libsqlite3.tbd */; };
 		5B3CE69629914FC100641F53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3CE69529914FB900641F53 /* libz.tbd */; };
 		6A0138F50ED1D47900715577 /* YKAFWordCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A0138F20ED1D47900715577 /* YKAFWordCount.cpp */; };
@@ -325,7 +323,6 @@
 		6AD322680D76DA6B005083D4 /* Minotaur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD322220D76D793005083D4 /* Minotaur.cpp */; };
 		6AD322720D76DAAD005083D4 /* libKeyring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD322590D76DA3E005083D4 /* libKeyring.a */; };
 		6AD3236C0D76DAE3005083D4 /* libKeyring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD322590D76DA3E005083D4 /* libKeyring.a */; };
-		6AD3241F0D76DB78005083D4 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD322250D76D7AE005083D4 /* libcrypto.dylib */; };
 		6AE3FA880D76773700C7D18D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3FA870D76773700C7D18D /* Main.cpp */; };
 		6AE3FAD20D76779100C7D18D /* PlainVanilla.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4771070D5C56D500C6C744 /* PlainVanilla.h */; };
 		6AE3FAD30D76779100C7D18D /* PVBasicKeyValueMapImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4771080D5C56D500C6C744 /* PVBasicKeyValueMapImpl.h */; };
@@ -491,7 +488,6 @@
 		D4BAC60C0DA95ED5008E90A4 /* package.icns in Resources */ = {isa = PBXBuildFile; fileRef = D4BAC60B0DA95ED5008E90A4 /* package.icns */; };
 		D4BAC6150DA9659C008E90A4 /* speak.gif in Copy Files (WebUI) */ = {isa = PBXBuildFile; fileRef = D4BAC6140DA96585008E90A4 /* speak.gif */; };
 		D4C2FFB710623345005DB6AF /* TakaoLoadedModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C2FFB510623345005DB6AF /* TakaoLoadedModule.m */; };
-		D4CB39590D9D7665000F7DE9 /* DotMacKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D4CB39580D9D7665000F7DE9 /* DotMacKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D4D0BC710EEDAB06007CACEA /* PEMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0BC700EEDAB06007CACEA /* PEMainWindow.m */; };
 		D4DCDB8110665240003FAFB5 /* TakaoReverseLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DCDB7F10665240003FAFB5 /* TakaoReverseLookup.m */; };
 		D4DCDB8E106652BC003FAFB5 /* TakaoReverseLookup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4DCDB8B106652BC003FAFB5 /* TakaoReverseLookup.xib */; };
@@ -870,7 +866,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D4CB39590D9D7665000F7DE9 /* DotMacKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,7 +873,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B1CFB2829920B3800835F8C /* libboringssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libboringssl.tbd; path = usr/lib/libboringssl.tbd; sourceTree = SDKROOT; };
 		5B3CE69229914F3900641F53 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5B3CE69529914FB900641F53 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5B3CE6D02991588100641F53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = PreferenceApplications/DownloadUpdateOSX/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1145,7 +1139,6 @@
 		6ACC87E20D8A6373008D5924 /* InputMethodKitTiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputMethodKitTiger.h; path = "Loaders/OSX-TSM/InputMethodKitTiger.h"; sourceTree = "<group>"; };
 		6AD3221F0D76D77C005083D4 /* Minotaur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Minotaur.h; path = Frameworks/Minotaur/Headers/Minotaur.h; sourceTree = "<group>"; };
 		6AD322220D76D793005083D4 /* Minotaur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Minotaur.cpp; path = Frameworks/Minotaur/Source/Minotaur.cpp; sourceTree = "<group>"; };
-		6AD322250D76D7AE005083D4 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
 		6AD322280D76D7C2005083D4 /* DevPublicKey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DevPublicKey.c; path = Distributions/Takao/Keyring/DevPublicKey.c; sourceTree = "<group>"; };
 		6AD322290D76D7C2005083D4 /* DevVendorDBKeyPhrase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DevVendorDBKeyPhrase.c; path = Distributions/Takao/Keyring/DevVendorDBKeyPhrase.c; sourceTree = "<group>"; };
 		6AD3222A0D76D7C2005083D4 /* SQLiteCryptoInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SQLiteCryptoInit.cpp; path = Distributions/Takao/Keyring/SQLiteCryptoInit.cpp; sourceTree = "<group>"; };
@@ -1197,7 +1190,6 @@
 		6AF2614B0D9F96FC00F499FB /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Context.m; path = "Loaders/OSX-TSM/Context.m"; sourceTree = "<group>"; };
 		6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.1.tbd; sourceTree = "<absolute>"; };
 		6AFC445010623A6A000CECB4 /* LFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LFUtilities.h; path = Frameworks/LFExtensions/LFUtilities.h; sourceTree = "<group>"; };
-		6AFDF3E3113261E300AE32D6 /* libboringssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libboringssl.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libboringssl.tbd; sourceTree = DEVELOPER_DIR; };
 		D4041FEF0F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TakaoKeyboardLayoutPopUpButton.h; path = PreferenceApplications/OSX/TakaoKeyboardLayoutPopUpButton.h; sourceTree = "<group>"; };
 		D4041FF00F1C855A00B52BC9 /* TakaoKeyboardLayoutPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TakaoKeyboardLayoutPopUpButton.m; path = PreferenceApplications/OSX/TakaoKeyboardLayoutPopUpButton.m; sourceTree = "<group>"; };
 		D407A1B60EC4B9D4004F434D /* addressBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addressBook.png; path = Utilities/PhraseEditor/OSX/Images/addressBook.png; sourceTree = "<group>"; };
@@ -1394,7 +1386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1D4CC710613E910085AFA3 /* libOpenVanilla.a in Frameworks */,
-				5B1CFB2929920B3E00835F8C /* libboringssl.tbd in Frameworks */,
 				6A1D4CC810613E910085AFA3 /* libPlainVanilla.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1411,11 +1402,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1CFB2D2992109D00835F8C /* libsqlite3.tbd in Frameworks */,
 				6A428A630D74089800ABCDA1 /* libOpenVanilla.a in Frameworks */,
 				6A428A640D74089800ABCDA1 /* libFormosa.a in Frameworks */,
 				6A428A650D74089800ABCDA1 /* libManjusri.a in Frameworks */,
 				6A7E65E00E1BB59B0071ED92 /* libSystem.B.tbd in Frameworks */,
-				5B1CFB2A29920B9B00835F8C /* libboringssl.tbd in Frameworks */,
 				6A7E65E40E1BB5A30071ED92 /* libz.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1484,7 +1475,6 @@
 				D4987D130E17FA5A001D4197 /* Carbon.framework in Frameworks */,
 				6A47737B0D5C621400C6C744 /* InputMethodKit.framework in Frameworks */,
 				6AB5B30E0D5C8DBA0040CD26 /* WebKit.framework in Frameworks */,
-				6AD3241F0D76DB78005083D4 /* libcrypto.dylib in Frameworks */,
 				6A7E65870E1BB3600071ED92 /* libSystem.B.tbd in Frameworks */,
 				5B3CE69429914F7800641F53 /* libsqlite3.tbd in Frameworks */,
 				6A85A1F70E41ADF9002C3544 /* SystemConfiguration.framework in Frameworks */,
@@ -1511,11 +1501,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1CFB2E299210AA00835F8C /* libsqlite3.tbd in Frameworks */,
 				6ABC3EB20DBF628300146A8B /* libOpenVanilla.a in Frameworks */,
 				6ABC3EB50DBF628300146A8B /* libManjusri.a in Frameworks */,
 				6ABC3EB40DBF628300146A8B /* libFormosa.a in Frameworks */,
 				6A7E65DF0E1BB5980071ED92 /* libSystem.B.tbd in Frameworks */,
-				5B1CFB2B29920BAB00835F8C /* libboringssl.tbd in Frameworks */,
 				6A7E65E50E1BB5A60071ED92 /* libz.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1543,7 +1533,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B1CFB2C29920DBD00835F8C /* libboringssl.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1749,7 +1738,6 @@
 				6A4771460D5C583600C6C744 /* OS X Frameworks and Libraries */,
 				6A476FF90D5C4DBE00C6C744 /* ExternalLibraries */,
 				6A476EE80D5C48CE00C6C744 /* Products */,
-				6AFDF3E3113261E300AE32D6 /* libboringssl.tbd */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1790,7 +1778,6 @@
 		6A476F790D5C4D0300C6C744 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B1CFB2829920B3800835F8C /* libboringssl.tbd */,
 				5B3CE69529914FB900641F53 /* libz.tbd */,
 				5B3CE69229914F3900641F53 /* libsqlite3.tbd */,
 				6A859F2C0E41A473002C3544 /* LFWebAPIToolbox */,
@@ -2025,7 +2012,6 @@
 				6AF6B7890DD08DE400A0C8FD /* libz.1.tbd */,
 				D4CB39580D9D7665000F7DE9 /* DotMacKit.framework */,
 				D4F7DB130D9B8F3E00AA67B9 /* Carbon.framework */,
-				6AD322250D76D7AE005083D4 /* libcrypto.dylib */,
 				6AB5B30D0D5C8DBA0040CD26 /* WebKit.framework */,
 				6A4773830D5C622A00C6C744 /* AudioToolbox.framework */,
 				6A4773760D5C621400C6C744 /* AppKit.framework */,
