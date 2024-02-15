@@ -41,7 +41,7 @@
 #pragma mark NSTableView data source and delegate methods.
 
 - (int)numberOfRowsInTableView:(NSTableView *)aTableView {
-  return [_array count];
+  return (int)[_array count];
 }
 
 - (id)tableView:(NSTableView *)aTableView

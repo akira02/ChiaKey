@@ -218,6 +218,8 @@ static DownloadManager *_manager;
 - (void)downloadDidFinish:(NSURLDownload *)download {
   [download release];
 
+  id x = OPENVANILLA_DO_CONNECTION_NAME;
+
   id ovService = [NSConnection
       rootProxyForConnectionWithRegisteredName:OPENVANILLA_DO_CONNECTION_NAME
                                           host:nil];

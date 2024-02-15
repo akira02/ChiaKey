@@ -118,7 +118,7 @@
                cocoaModifiers:(unsigned int)modifiers
                virtualKeyCode:(unsigned int)keyCode
                        sender:(id)sender {
-  NSEvent *fakeEvent = [NSEvent keyEventWithType:NSKeyDown
+  NSEvent *fakeEvent = [NSEvent keyEventWithType:NSEventTypeKeyDown
                                         location:NSMakePoint(0.0, 0.0)
                                    modifierFlags:modifiers
                                        timestamp:0.0

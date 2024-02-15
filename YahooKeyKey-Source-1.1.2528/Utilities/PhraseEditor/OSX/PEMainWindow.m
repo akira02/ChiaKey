@@ -13,7 +13,7 @@
 @implementation PEMainWindow
 
 - (void)sendEvent:(NSEvent *)event {
-  if ([event type] == NSKeyDown) {
+  if ([event type] == NSEventTypeKeyDown) {
     if ([event keyCode] == 53) {
       NSText *text = [self fieldEditor:YES forObject:self];
       if ([text delegate] != nil &&

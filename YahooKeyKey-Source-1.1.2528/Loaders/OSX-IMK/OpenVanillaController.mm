@@ -376,7 +376,7 @@ static id OVCActiveContextSender = nil;
       }
     }
 #endif
-  } else if ([event type] == NSKeyDown) {
+  } else if ([event type] == NSEventTypeKeyDown) {
     bool isHandled = false;
 
     NSString *chars = [event characters];

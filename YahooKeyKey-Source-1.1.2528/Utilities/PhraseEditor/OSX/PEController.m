@@ -47,6 +47,9 @@ typedef unsigned int NSUInteger;
   [[self window] setToolbar:toolbar];
   [[self window] setDelegate:(id)self];
   [[self window] center];
+  if (@available(macOS 11, *)) {
+    [[self window] setToolbarStyle:NSWindowToolbarStylePreference];
+  }
 
   [NSApp setDelegate:(id)self];
 

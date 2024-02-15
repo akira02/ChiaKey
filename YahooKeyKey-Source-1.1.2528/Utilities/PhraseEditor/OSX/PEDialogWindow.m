@@ -11,7 +11,7 @@
 @implementation PEDialogWindow
 
 - (void)sendEvent:(NSEvent *)event {
-  if ([event type] == NSKeyDown) {
+  if ([event type] == NSEventTypeKeyDown) {
     if ([event keyCode] == 53) {
       if (_cancelButton) {
         [_cancelButton performClick:self];

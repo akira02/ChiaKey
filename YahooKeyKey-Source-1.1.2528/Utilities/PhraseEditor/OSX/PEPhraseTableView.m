@@ -14,11 +14,11 @@
 
 - (NSMenu *)menuForEvent:(NSEvent *)event {
   NSPoint location = [event locationInWindow];
-  int clickedRow = [self rowAtPoint:[self convertPoint:location fromView:nil]];
+  int clickedRow = (int)[self rowAtPoint:[self convertPoint:location fromView:nil]];
   if (clickedRow < 0) {
     return nil;
   }
-  [self selectRow:clickedRow byExtendingSelection:NO];
+  [self selectRowIndexes:[NSIndexSet indexSetWithIndex:clickedRow] byExtendingSelection:NO];
   return [self menu];
 }
 

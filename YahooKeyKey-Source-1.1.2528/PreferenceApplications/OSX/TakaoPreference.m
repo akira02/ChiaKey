@@ -80,6 +80,10 @@ file for terms.
   [_keyboardLayoutContentView addSubview:_keyboardLayoutView];
 #endif
 
+  if (@available(macOS 11, *)) {
+    [window setToolbarStyle:NSWindowToolbarStylePreference];
+  }
+
   [window setLevel:NSFloatingWindowLevel];
   [window setToolbar:toolbar];
   [window center];
